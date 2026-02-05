@@ -16,7 +16,7 @@ int main(){system("cls");
    for(int x=0; x<number;x++){
       for(int u=0; u<2; u++){
           cin>>Grades[x][u];
-      }cout<<"....................\n";
+      }cout<<endl;
    }
    int Themax=-1;
    string theTopName="";
@@ -38,12 +38,12 @@ int main(){system("cls");
             cout<<"Status: Failed";
           }
           cout<<endl;
-          cout<<"..............\n";
+          
           if(Themax<sum){
             Themax=sum;
             theTopName=Name[x];
           }
          }
-   //"The Top Student is: [Name] with Total: [Sum]"
+   
    cout<<"The Top Student is: ["<<theTopName<<"] with Total: ["<<Themax<<"]";
    return 0;}
