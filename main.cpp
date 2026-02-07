@@ -38,7 +38,7 @@ int main(){system("cls");
             cout<<"Status: Failed";
           }
           cout<<endl;
-          
+          cout<<"-------------------\n";
           if(Themax<sum){
             Themax=sum;
             theTopName=Name[x];
