@@ -51,22 +51,18 @@ int main(){
             cout<<"Status: Failed";
           }
           cout<<endl;
-          cout<<"-------------------\n";
+         
           if(Themax<sum){
             Themax=sum;
             theTopName=Name[x];
           }
+          cout<<"The Final Status is "<<getFinalStatus(sum)<<endl;
+           cout<<"-------------------\n";
          }    
-      int Total;
-      cout<<"Enter your Total of your Grade: "<<endl;
-      cin>>Total;
-      string statuts =getFinalStatus(Total);
-      cout<<"The Final Status is "<<statuts<<endl;
-      cout<<"---------------------------"<<endl;
-   
+            
    cout<<"The Top Student is: ["<<theTopName<<"] with Total: ["<<Themax<<"]";
    cout<<endl;
    prinTN();
 
-return 0;}
-   
+return 0;
+}
