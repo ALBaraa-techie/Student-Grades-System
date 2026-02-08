@@ -1,8 +1,20 @@
+  //A program suitable for any school or educational academy
 #include <iostream>
 using namespace std;
-int main(){system("cls");
+ void prinTN(){
+   cout<<"Thank you for using that. Good luck.";
+ }
+string getFinalStatus(int Total){
+    if(Total>=100){
+        return "Excellent";
+    }
+    else{
+        return "Needs Improvement";
+    }
+ }
+int main(){
 
-   int number;
+    int number;
    cout<<"Enter the number Of student please :\n ";
    cin>>number;
 
@@ -30,6 +42,7 @@ int main(){system("cls");
           
           
       } cout<<" Total = "<<sum;
+        
       cout<<endl;
       if(sum>=100){
             cout<<"Status: Passed ";
@@ -43,7 +56,17 @@ int main(){system("cls");
             Themax=sum;
             theTopName=Name[x];
           }
-         }
+         }    
+      int Total;
+      cout<<"Enter your Total of your Grade: "<<endl;
+      cin>>Total;
+      string statuts =getFinalStatus(Total);
+      cout<<"The Final Status is "<<statuts<<endl;
+      cout<<"---------------------------"<<endl;
    
    cout<<"The Top Student is: ["<<theTopName<<"] with Total: ["<<Themax<<"]";
-   return 0;}
+   cout<<endl;
+   prinTN();
+
+return 0;}
+   
